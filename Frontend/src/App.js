@@ -6,9 +6,10 @@ import Appoinments from "./pages/Appoinments";
 import Staff from "./pages/Staff";
 import Services from "./pages/Services";
 import Signup from "./pages/signup1";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import OnlineAppoinment from "./pages/OnlineAppoinment";
 import PhysicalAppoinment from "./pages/PhysicalAppoinment";
+import otp from "./pages/OTP";
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/login" element = {<Login></Login>} />
           <Route path="/onlineappoinment" element = {<OnlineAppoinment></OnlineAppoinment>} />
           <Route path="/physicalappoinment" element = {<PhysicalAppoinment></PhysicalAppoinment>} />
+          <Route path="/OTP" element = {<otp></otp>}/>
         </Routes>
 
      </Router>

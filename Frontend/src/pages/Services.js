@@ -3,7 +3,7 @@ import Header from "../Components/header";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 //import MentalService from "../Assests/service01";
-import "../Styles/Services.css";
+
 
 
 const Services = () => {

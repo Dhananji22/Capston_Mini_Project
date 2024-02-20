@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
 
-const OnlineAppoinment = () => {
+const PhysicalAppoinment = () => {
   const [formData, setFormData] = useState({
     regnumber: '',
     date: '',
@@ -43,7 +43,7 @@ const OnlineAppoinment = () => {
 
         <div className="right-part">
         <div className="right-content">
-          <h1 className="header-text">Set Up your Online Appoinment</h1>
+          <h1 className="header-text">Set Up your Physical Appoinment</h1>
 
           <form onSubmit={handleSubmit}>
       <label>
@@ -110,4 +110,4 @@ const OnlineAppoinment = () => {
   )
 }
 
-export default OnlineAppoinment;
+export default PhysicalAppoinment
