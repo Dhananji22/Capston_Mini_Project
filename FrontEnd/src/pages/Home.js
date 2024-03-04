@@ -1,5 +1,6 @@
 // import React from "react";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import BannerImage from "../Assests/Home image.png";
 import EllipseBackground from "../Assests/Ellipse 95.png";
 import RectangleBackground from "../Assests/Rectangle 23.png";
@@ -71,6 +72,7 @@ const ImageSlider = () => {
 };
 
 const Home = () => {
+  const navigate = useNavigate();
   const [focusElement, setFocusElement] = useState(0);
   const images = [service1, service2, service3, service4,service5];
   const info = ['Mental Health','Update Your Medical Profile','Online Appointments','Online video Consultation' ,'Emergency Service' ];
@@ -118,7 +120,7 @@ return (
           <p className="primary-text">
             For a  healthier future
           </p>
-          <button className="secondary-button">
+          <button className="secondary-button" onClick={()=> navigate("/signup1")}>
             Sign Up Now {" "}
           </button>
         </div>
@@ -146,7 +148,7 @@ return (
           University of Sabaragamuwa Medical System is a government, university-based regional health system focused on serving the health care needs of students and university staff.
         </p>
         <div className="about-buttons-container">
-          <button className="secondary-button">Learn More</button>
+          <button className="secondary-button" onClick={()=> navigate("/about")}>Learn More</button>
         </div>
       </div>
     </div>
@@ -158,7 +160,7 @@ return (
             <div className="service-text-section">
                 <h1 className="primary-heading1">Our Services</h1>
                 <p className="primary-text1">Welcome to our comprehensive suite of services designed to meet your unique needs. </p>
-                <button className="secondary-button">Learn More</button>
+                <button className="secondary-button" onClick={()=> navigate("/Services")}>Learn More</button>
             </div> 
             <div className="service-images-section">
                 <div className="carousel">

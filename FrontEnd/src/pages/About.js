@@ -1,9 +1,7 @@
 import React from "react";
 import Header from "../Components/header";
-import "../Styles/About.css";
 import Navbar from "../Components/Navbar";
-
-
+import Footer from "../Components/Footer";
 
 const About = () => {
   return (
@@ -11,9 +9,30 @@ const About = () => {
     <Header/>
     <div className="outer-container">
     <Navbar/>
-   </div>
+    <div className="appoinment-box">
+        <div className="left-part">
+          <div className="left-content">
+        <h1 className="header-text">We are UniAid</h1>
+          <p className="para-text">Get to know us</p>
+          <p className= "sign-text">Already have an account? <a href="\login">Login</a></p>
+          </div>
+        </div>
+
+        <div className="right-part">
+        <div className="right-content">
+          <h1 className="header-text">About Us</h1>
+          <p className="para-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi cras fermentum odio eu feugiat. Sodales neque sodales ut etiam sit amet. Ante </p>
+
+          <h1 className="header-text">What we do</h1>
+          <p className="para-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi cras fermentum odio eu feugiat. Sodales neque sodales ut etiam sit amet. Ante </p>
+       </div>
+       </div>
+      </div>
+      <Footer />
+      </div>
    </>
-  );
-};
+  )
+}
 
 export default About;
+
